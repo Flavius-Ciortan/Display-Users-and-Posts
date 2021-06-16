@@ -1,0 +1,119 @@
+.accordion-wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.accordion {
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 0 5px rgba(225,225,225,1);
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.accordion.active {
+	height: auto;
+}
+
+.accordion .accordion_tab p {
+	padding: 20px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 80%;
+	float: left;
+	margin-bottom: 0;
+}
+
+.accordion .accordion_content {
+	padding: 20px;
+	border-top: 1px solid #e9e9e9;
+	clear: both;
+}
+
+span.user-posts-date {
+	float: right;
+	font-size: 13px;
+	letter-spacing: 0px;
+	text-transform: none;
+	padding: 10px 15px;
+}
+
+.accordion_content hr {
+	width: 95%;
+	margin: 15px auto;
+	border-color: #e8e8e8;
+}
+
+.accordion_content hr:last-of-type {
+	display: none;
+}
+
+p.no-posts {
+	text-align: center;
+	color: #ed143d;
+}
+
+.accordion-icon-container {
+	padding: 20px;
+	float: right;		
+}
+
+img.accordion-icon {
+	max-height: 30px;
+}
+
+.accordion_tab.active img {
+	transform: rotate(180deg);
+	transition: transform 500ms ease;
+}
+
+.accordion_tab img {
+	transition: transform 500ms ease;
+}
+
+@media (max-width: 767px) {
+	.accordion-wrapper {
+		width: 100%;
+	}
+	.accordion .accordion_tab p {
+		padding: 15px;
+		font-size: 15px;
+	}
+	.accordion .accordion_tab p	{
+		width: 75%;
+	}
+	.accordion-icon-container {
+		padding: 15px;
+	}
+	.accordion-icon {
+		max-height: 20px!important;
+	}
+	.accordion {
+		height: 52px;
+	}
+	.user-posts-item a {
+		font-size: 13px;
+	}
+	.user-posts-date {
+		font-size: 10px!important;
+		padding: 5px!important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
